@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Be My Valentine</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
-        <div class="container">
-                <span class="title">
-                    <h1>Will you be my Valentine?</h1>
-                </span>
-                <div class="main">
-                    <button class="true" onclick="handleYes()"> 
-                        YES 
-                    </button>
 
-                    <button class="false" id="no_button" onclick="handleNO()"> 
-                        NO 
-                    </button>
-                </div>
-            </div>
-            <b><p id="reaction"></p> </b>
-        
-        
+<head>
+    <title>Be My Valentine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <span class="title">
+            <h1>Will you be my Valentine?</h1>
+        </span>
+        <div class="main">
+            <button class="true" onclick="handleYes()">
+                YES
+            </button>
+
+            <button class="false" id="no_button" onclick="handleNO()">
+                NO
+            </button>
+        </div>
+    </div>
+    <b>
+        <p id="reaction"></p>
+    </b>
+
     <script>
-    function handleYes() {
-        document.getElementById("reaction").innerHTML = "Yayyayyayaya!!!";
-    }
+        function handleYes() {
+            document.getElementById("reaction").innerHTML = "Yayyayyayaya!!!";
+        }
 
-    function handleNO() {
-      const button = document.getElementById("no_button");
-      const maxX = window.innerWidth - button.offsetWidth;
-      const maxY = window.innerHeight - button.offsetHeight;
+        function handleNO() {
+            const button = document.getElementById("no_button");
+            const maxX = window.innerWidth - button.offsetWidth;
+            const maxY = window.innerHeight - button.offsetHeight;
 
-      const randomX = Math.random() * maxX;
-      const randomY = Math.random() * maxY;
+            const randomX = Math.random() * maxX;
+            const randomY = Math.random() * maxY;
 
-      button.style.left = `${randomX}px`;
-      button.style.top = `${randomY}px`;
-    }
+            button.style.left = `${randomX}px`;
+            button.style.top = `${randomY}px`;
+        }
     </script>
-    
-    </body>
-</html>
 
+    <footer class="info">
+        Created by <a href="https://github.com/ysuovnii" target="_blank">@ysuovnii</a>
+    </footer>
+
+</body>
+
+
+</html>

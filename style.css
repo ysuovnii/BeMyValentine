@@ -77,24 +77,4 @@ button{
     opacity: 0.3;
 }
 
-.info {
-    position: fixed;
-    bottom: 5px;
-    width: 100%;
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-    color: #161414;
-    font-size: 15px; /* or use 9px or 8px if you want it smaller */
-    z-index: 999;
-}
 
-.info a {
-    color: #161414;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.info a:hover {
-    text-decoration: underline;
-}

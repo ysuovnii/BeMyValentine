@@ -4,7 +4,7 @@ A fun interactive webpage asking the ultimate question
 
 ##  Live Demo
 
- [Click here to view it live](https://ysuovnii.github.io/be-my-valentine/)  
+ [Click here to view it live](https://ysuovnii.github.io/BeMyValentine/)  
 
 ## Built With
 

@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url("Pacifico-Regular.ttf");
+}
+
+#reaction {
+    font-size: 24px;
+    color: #ff4d6d;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+body{
+    height:100vh; 
+    margin: 0px;
+    position: relative;
+    overflow: hidden;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("photo2.jpg");
+    font-family: 'Pacifico', cursive;
+}
+
+#no_button {
+    position: absolute;
+    transition: all 0.3s ease;
+    background-color: #ff4d6d;
+    color: whitesmoke;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.container{
+    text-align: center;
+}
+
+.title{
+    color: 	#ff4d6d;
+    font-size: 25px;
+}
+
+button{
+    background-color: 	#ff4d6d;
+    color:whitesmoke; 
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    border:none; 
+    border-radius: 50px;
+    padding: 15px; 
+}
+
+.true{
+    transition: box-shadow 0.5s;
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.false{
+    transition: opacity 0.5s;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.true:hover{
+    transform: scale(2.2);
+    box-shadow: 0 0 15px #f83461, 0 0 25px #f83461;
+}
+
+.false:hover{
+    transform: scale(0.5, 0.5);
+    opacity: 0.3;
+}
